@@ -22,7 +22,9 @@ Per ottenere ulteriori informazioni sull'oggetto ConfigMap "myconfigmap" in Kube
 ```bash
 kubectl describe configmap myconfigmap
 ```
+
 OUTPUT
+```bash
 Name:         myconfigmap
 Namespace:    default
 Labels:       <none>
@@ -38,9 +40,11 @@ BinaryData
 ====
 
 Events:  <none>
-*******************************************************************
-Cap 6/configmap-for-file.yaml
+```
 
+Cap 6/configmap-for-file.yaml
+-------------------------------------------
+```yaml
 kind: ConfigMap
 apiVersion: v1
 metadata:
@@ -67,6 +71,7 @@ Per ottenere ulteriori informazioni sull'oggetto ConfigMap "myconfigmap-files" i
 kubectl describe configmap myconfigmap-files
 ```
 OUTPUT
+```bash
 Name:         myconfigmap-files
 Namespace:    default
 Labels:       <none>
@@ -95,7 +100,7 @@ BinaryData
 ====
 
 Events:  <none>
-
+```
 
 **Aggiorno il file prec. inserendo il file lorotate.conf:**
 Cap 6/configmap-for-file2.yaml
